@@ -42,7 +42,7 @@ const BookList = () => {
               </div>
               <div className="card-info">
                 <h4>Title : {item.title}</h4>
-                <h4>Author : {item.author}</h4>
+                <h5>Author : {item.author}</h5>
               </div>
               <div className="card-btn">
                 <button
