@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(6, 6, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3vw;
+  color: #fff;
+}
+.link{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-btn{
+  width: 80px;
+  height: 25px;
+  background-color: orangered;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.list-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0px;
+}
+
+.book-card{
+  width: 20vw;
+  min-width: 300px;
+  max-width: 350px;
+  height: 380px;
+  background-color: rgb(255, 249, 210);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.511);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.5);
+  transition: all ease 300ms;
+}
+.book-card:hover{
+  scale: 1.04;
+  border-radius: 5px 20px 5px 20px;
+}
+.card-img{
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+}
+.card-img>img{
+  width: 100%;
+  height: 100%;
+}
+.card-info{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+.card-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-btn>button{
+  flex-grow: 1;
+  height: 30px;
+  border: none;
+  color: #ffff;
+}
+.delete{
+  background-color: red;
+}
+.edit{
+  background-color: rgb(158, 35, 158);
+}
+.details{
+  background-color: rgb(83, 83, 179);
+}
+
+.search-conatiner{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0px;
+}
+.search-conatiner>input{
+  min-width: 280px;
+  width: 25vw;
+  max-width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.406);
+  border-radius: 5px;
+  padding: 5px 15px;
+  outline: none;
+}
+
+.add-container{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.296);
+  backdrop-filter: blur(12px);
+}
+
+.add-book-card{
+  width: 22vw;
+  min-width: 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
+  gap: 1rem;
+  padding: 15px;
+  background-color: rgba(255, 255, 187, 0.445);
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.input-fields{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.input-fields>input{
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid grey;
+  background-color: #ddd;
+}
+.error{
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  color: red;
+}
+.add-card-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+button{
+  cursor: pointer !important;
+  transition: all ease 200ms;
+}
+.cancel-btn, .addcard-btn{
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: #ffff;
+}
+.cancel-btn{
+  background-color: red;
+}
+.addcard-btn{
+  background-color: orangered;
+}
+.back-btn{
+  width: 80px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(73, 73, 174);
+  margin-bottom: 2px;
+}
+.des{
+  font-size: 12px;
+}
+button:hover{
+  filter: brightness(60%);
+}
+input{
+  transition: all ease 200ms;
+}
+input:focus{
+  padding: 10px 15px;
+}
