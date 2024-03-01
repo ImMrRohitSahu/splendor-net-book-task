@@ -82,6 +82,7 @@ const EditBook = ({ setEditPopUp, editId }) => {
             placeholder="Enter Book Image URL"
             required
             value={image}
+            disabled
             onChange={(e) => setImage(e.target.value)}
           />
         </div>
